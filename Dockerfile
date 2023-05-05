@@ -30,3 +30,6 @@ RUN composer install
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+
+# tell the port number the container should expose
+EXPOSE 8080
